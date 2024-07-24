@@ -16,16 +16,17 @@ body{
 }
 
 .game{
-    width: 400px;
+    /* width: 500px; */
+    /* height: 300px; */
     background: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .game h1{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 900;
 }
 
@@ -35,19 +36,111 @@ body{
 
 .choices button {
     margin: 0 10px;
-    padding: 10px 20px;
+    padding: 20px 30px;
     font-size: 16px;
     cursor: pointer;
 }
 
 .choices button i{
-    font-size: 25px;
+    font-size: 30px;
     color: #d62828;
 }
 
 .results {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
+.results p{
+    font-size: 20px;
+    font-weight: 600;
+}
 
+#score{
+    font-size: 25px;
+    font-weight: 800;
+    color: #000;
+}
 
+/* Media queries pour les tablettes */
+@media (max-width: 768px) {
+    .game {
+        padding: 15px;
+    }
+
+    .game h1 {
+        font-size: 2rem;
+    }
+
+    .choices button {
+        padding: 12px 16px;
+        font-size: 0.875rem;
+    }
+
+    .choices button i {
+        font-size: 1.25rem;
+    }
+
+    .results p {
+        font-size: 1rem;
+    }
+
+    #score {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media queries pour les téléphones portables */
+@media (max-width: 480px) {
+    .game {
+        padding: 10px;
+    }
+
+    .game h1 {
+        font-size: 1.75rem;
+    }
+
+    .choices button {
+        padding: 10px 14px;
+        font-size: 0.75rem;
+    }
+
+    .choices button i {
+        font-size: 1rem;
+    }
+
+    .results p {
+        font-size: 0.875rem;
+    }
+
+    #score {
+        font-size: 1.25rem;
+    }
+}
+
+/* Media queries pour les très petits appareils */
+@media (max-width: 360px) {
+    .game {
+        padding: 5px;
+    }
+
+    .game h1 {
+        font-size: 1.5rem;
+    }
+
+    .choices button {
+        padding: 8px 10px;
+        font-size: 0.625rem;
+    }
+
+    .choices button i {
+        font-size: 0.875rem;
+    }
+
+    .results p {
+        font-size: 0.75rem;
+    }
+
+    #score {
+        font-size: 1rem;
+    }
+}
